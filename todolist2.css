@@ -1,0 +1,256 @@
+body p{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.edit,.pendingEdit{
+    color: white;
+    padding: 10px 9px 10px 9px;
+    background-color: rgb(137, 38, 177);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.15s;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.edit:hover,.pendingEdit:hover{
+    opacity: 0.7;
+}
+.edit:active,.pendingEdit:active{
+    opacity: 0.5;
+}
+.enter{
+    padding: 11px;
+    color: white;
+    background-color: rgb(204, 65, 15);
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.15;
+}
+.enter:hover{
+    opacity: 0.8;
+}
+.bar{
+    padding: 10px;
+    border-color: rgb(135, 34, 175);
+    outline-color: rgb(135,34,175);
+    border-radius: 5px;
+    width: 365px;
+}
+.butto{
+    color: white;
+    padding: 10px 7px 10px 7px;
+    background-color: rgb(218, 109, 7);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.15s;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.complete,.pendingComplete{
+    color: white;
+    padding: 10px 5px 10px 5px;
+    background-color: green;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.15s;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.error{
+    margin-top: -15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    padding: 0px;
+}
+.butto:hover{
+    opacity: 0.8;
+}
+.complete:hover,.pendingComplete:hover{
+    opacity: 0.8;
+}
+.para,.pendingPara{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 8px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    overflow-wrap: break-word;
+    flex: 1;
+}
+.all,.pendingAll{
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    column-gap: 20px;
+    padding-bottom: -20px;
+    position: relative;
+}
+
+.manager{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.class,.present{
+    background-color: rgb(190, 183, 183);
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    left: 10px;
+    position: absolute;
+    z-index: 1;
+    row-gap: 10px;
+}
+
+.classinner,.classPendinginner{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 250px;
+    justify-content: space-between;
+}
+.inputEditor,.inputPendingEditor{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px;
+}
+.change ,.cancel{
+    margin-left: 8px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: chocolate;
+    transition: 0.15s;
+}
+.cancel:hover{
+    opacity: 0.6;
+}
+.change:hover{
+    opacity: 0.6;
+}
+.innererror{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    padding: 0px; 
+    font-size: 15px;
+    margin-top: -15px;
+    margin-left: 8px;
+}
+.completeButton{
+    text-decoration: line-through;
+}
+.editDisable{
+    display: none;
+}
+.slides{
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    margin-top: 5px;
+    width: 400px;
+    justify-content: space-between;
+}
+.slides p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(168, 37, 124);
+    transition: 0.15s;
+    margin-bottom: 15px;
+}
+.slides p:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+}
+.slides p:active{
+    opacity: 0.5;
+}
+.completed p {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 8px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    overflow-wrap: break-word;
+    flex: 1;
+    text-decoration: line-through;
+}
+.completed{
+    display: none;
+    margin-top: 30px;
+}
+.alldisappear{
+    display: none;
+}
+.appearcompleted{
+    display: list-item;
+}
+.reduceOpacity{
+    opacity: 0.4;
+    pointer-events: none;
+}
+.completedSectionAll{
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    column-gap: 20px;
+    padding-bottom: -20px;
+    position: relative;
+    
+}
+.completedSectionAll p,.completedSectionAll buttons{
+    flex: 1;
+}
+.completedDelete{
+    color: white;
+    padding: 10px 7px 10px 7px;
+    background-color: rgb(218, 109, 7);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.15s;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.undo{
+    color: white;
+    padding: 10px 9px 10px 9px;
+    background-color: rgb(137, 38, 177);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.15s;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.undo:hover,.completedDelete:hover{
+    opacity: 0.8;
+}
+.pendingDisappear{
+    display: none;
+}
+.pendingDisappear{
+    display: none;
+}
+.completeDisappear{
+    display: none;
+}
+.completed{
+    margin-top: 0px;
+}
